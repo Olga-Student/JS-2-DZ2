@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="Style.css">
+	<title>eShop</title>
+</head>
+
+<body>
+	<header class="header container">
+		<div class="header_nave">
+			<ul class="header_nave-menu">
+				<li>Игровая мебель</li>
+				<li>Стенки детские</li>
+				<li>Оборудование комнат</li>
+				<li>Кровати</li>
+				<li>Столики</li>
+				<li>Стульчики</li>
+			</ul>
+		</div>
+		<div class="header_menu">		
+				<form action="#" class="search-form header-left">
+					<input  type="text" class="search_input" name="search" placeholder="Search for item ..."> 
+					<button class="btn-search" type="submit">
+						<i class="fas fa-search"></i>
+					</button>
+				</form>			
+				
+			<div class="header-right">			
+				<button class="cart_button" type="button">Корзина</button>
+				<div class="cart-block invisible"></div>
+			</div>
+		</div>
+	</header>
+	<main>
+	    <h2 class="main-titel">Вам может понравиться</h2>
+		<div class="main-goods-list">
+			<div class="goods-list"></div>			
+		</div>
+	</main>
+	
+	<div class="form-box" >
+		<h3 style="text-align: center"> Форма обратной связи </h3>
+		<form action="#" class="somebody" id="usform">
+			<div>
+				<label>
+					putting Your name <br>
+					<input class="form-submit" type="text" name="name" id="name">
+				</label>
+			</div>
+			<div>
+				<label>
+					putting Your phone <br>
+					<input class="form-submit" type="tel" name="phone" id="phone">
+				</label>
+			</div>
+			<div>
+				<label>
+					putting Your email <br>
+					<input class="form-submit" type="email" name="imail" id="imail">
+				</label>
+			</div>
+			<button class="batton-submit" id="submit">Submit</button>
+		</form>	
+	</div>
+            
+     <script src="strict3.js"></script>
+     <script src="strict4.js"></script>
+	<script src="https://kit.fontawesome.com/f7320942cf.js" crossorigin="anonymous"></script>       
+</body>
+
+</html>
