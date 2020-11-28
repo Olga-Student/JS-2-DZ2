@@ -1,0 +1,102 @@
+.container {
+	margin: 0 auto;
+	height: 100%;
+	width: 1140px;
+}
+
+.header {
+	margin-top: 20px;
+	height: auto;
+}
+
+.header_nave-menu {
+	height: 70px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-transform: uppercase;
+	list-style-type: none;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.header_nave-menu > li:hover {
+	color: gray;
+}
+
+.header_menu {
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.search_input {
+	width: 240px;
+	height: 20px;
+	background: 3px solid black;
+	border-radius: 5px;
+}
+
+.cart_button {
+	width: 100px;
+	height: 20px;
+	background: 3px solid black;
+	border-radius: 5px;
+	font-size: 10px;
+	font-weight: 500;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.main {
+	margin-top: 25px;
+}
+
+.main-titel {
+	font-size: 20px;
+	font-weight: 500;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.main-goods-list {
+	text-align: center;
+}
+
+.goods-list {
+	margin-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.goods-item {
+	display: block;
+	margin-top: 5px;
+	width: 190px;
+	height: 370px;
+	border-bottom-color: black border-radius: 5px;
+}
+
+.goods-item h3 {
+	height: 50px;
+}
+
+.goods-item-foto {
+	width: 180px;
+	height: 200px;
+	background-position: center;
+	background-size: 185px auto;
+}
+
+.main-button {
+	width: 100px;
+	height: 20px;
+	background: 3px solid black;
+	border-radius: 5px;
+	font-size: 10px;
+	font-weight: 500;
+	text-transform: uppercase;
+	text-align: center;
+}
