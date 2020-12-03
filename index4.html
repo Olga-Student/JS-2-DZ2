@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style4.css">
+		<title>Vue.js</title>
+</head>
+
+<body>
+ <header id="root" class="header container">
+<div class="header-name">{{str.toUpperCase()}}</div>
+	 <div class="header_menu">
+		 <form class="header-left">
+			 <input class="search_input" type="text" name="search" v-model="searchLine">
+			 <button class="buttonsearch" type="submit"><img src="search.jpg" height="14" width="14" v-on:click="filteredGoods()"></button>
+			 <span v-on:click="clear">clear</span>
+			  <br>
+			 <input class="form" type="text" placeholder="your name ..."v-model="secondname"/>
+			 {{title}}
+			 <span v-on:click="clear" v-if="secondname.length > 0">clear</span>
+			 <span v-else> noname</span>
+		 </form>
+		 <div class="header-right">
+			 <button class="cart_button"  type="button" v-on:click="showCart = !showCart">Корзина</button>
+
+			 <div class="cart-block" v-show="showCart">
+				 <h6 v-if="!cartItems.length>0">В корзине нет ни одного товара</h6>
+				 <div class="cart-item" v-for="(product, id) in cartItems" :key="`product_${id}`">
+					 <div class="buy-list">
+						 <img class="goods-item-foto" src="#" alt="foto">
+						 <div class="goods-desc">
+							 <h3 class="goods-item-info_name">{{product.product_name   }}</h3>
+							 <p class="goods-item-info_quantity">Количество: {{product.quantity   }}</p>
+							 <p class="goods-item-info_price">{{product.price   }} рублей </p>
+						 </div>
+						 <div class="goodsprice">
+							 <p class="goods-sumprice">{{product.quantity*product.price}}</p>
+							 <button class="button-remuve" v-on:click="remove(product)">x</button>
+						 </div>
+					 </div>
+				 </div>
+
+			 </div>
+		 </div>
+	 </div>
+	 <div class="header-line"></div>
+	 <span class="getgoods" v-on:click="getData">Вам может понравиться</span>
+     <section class="catalogue" >
+		 <div class="goods-item" v-for="(item, id) in items"
+			  :key="`product_${id}`">
+			 <img class="goods-item-foto" src="#" alt="foto">
+			 <div class="goods-item-info">
+				 <h3 class="goods-item-info_name">{{item.product_name}}</h3>
+				 <p class="goods-item-info_price">{{item.price}}</p>
+				 <button class="main-button" type="button" v-on:click="addProduct(item)">Купить</button>
+			 </div>
+		 </div>
+	 </section>
+ </header>
+
+
+
+    <script src="https://kit.fontawesome.com/f7320942cf.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+	<script src="script4.js"></script>
+</body>
+
+</html>
