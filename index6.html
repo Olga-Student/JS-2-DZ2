@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style6_vue.css">
+    <title>Shop</title>
+</head>
+
+<body class="container">
+<div id="app">
+    <header>
+        <div class="header-name">{{str.toUpperCase()}}</div>
+        <div class="header_menu cart">
+            <div class="header-right">
+                <filterfield ref="filterfield"></filterfield>
+                <cart ref="cart"></cart>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="header-line"></div>
+        <p class="getgoods" >Вам может понравиться</p>
+        <div class="products">
+           <products ref="products"></products>
+            <attention ref="attention"></attention>
+        </div>
+    </main>
+</div>
+
+<script src="https://kit.fontawesome.com/f7320942cf.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+
+<script src="script/scriptCart_vue.js"></script>
+<script src="script/scriptProduct_vue.js"></script>
+<script src="script/scriptFilter_vue.js"></script>
+<script src="script/scriptError_vue.js"></script>
+<script src="script/script6_vue.js"></script>
+
+</body>
+
+</html>
