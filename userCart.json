@@ -1,0 +1,24 @@
+{
+    "amount": 46600,
+    "countGoods": 2,
+    "contents": [
+        {
+            "quantity": 1,
+            "id_product": 110,
+            "product_name": "Витрина для книг",
+            "price": 7600
+        },
+        {
+            "quantity": 1,
+            "id_product": 111,
+            "product_name": "Горка Мальвина",
+            "price": 5600
+        },
+        {
+            "quantity": 1,
+            "id_product": 113,
+            "product_name": "Книжная выставка",
+            "price": 4000
+        }
+    ]
+}
