@@ -1,0 +1,22 @@
+[
+  {
+    "id_product": 110,
+    "product_name": "Витрина для книг",
+    "price": 7600
+  },
+  {
+    "id_product": 111,
+    "product_name": "Горка Мальвина",
+    "price": 5600
+  },
+  {
+    "id_product": 112,
+    "product_name": "Живой уголок",
+    "price": 4600
+  },
+  {
+    "id_product": 113,
+    "product_name": "Книжная выставка",
+    "price": 4000
+  }
+]
