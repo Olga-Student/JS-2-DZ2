@@ -1,4 +1,4 @@
-Vue.component('attention', {
+const error = {
     data() {
         return {
             text: ''
@@ -21,6 +21,5 @@ Vue.component('attention', {
            {{text}}
        </p>
     </div>`
-
-
-});
+};
+export default error;
